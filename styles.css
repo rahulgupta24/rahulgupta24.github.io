@@ -1,0 +1,67 @@
+/* Styling for the body */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #162B39;
+  margin: 0;
+}
+
+/* Container for the stopwatch */
+.stopwatch-container {
+  text-align: center;
+  position: relative;
+}
+
+/* Container for the ring */
+.ring-container {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+}
+
+/* SVG ring */
+.ring {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-90deg);
+  stroke: #ffffff;
+  stroke-width: 10;
+  fill: transparent;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s linear;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+/* Timer display */
+.timer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.0rem;
+  font-weight: bold;
+  color: white;
+  background-color: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Running state color */
+.running {
+  color: #16aa27;
+}
+
+/* Paused state color */
+.paused {
+  color: #ffff00;
+}
